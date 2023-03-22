@@ -1,0 +1,36 @@
+class Main{
+    public static void main(String[] args){
+        int num=5;
+        for (int i =num; i > 0; i--)
+        {
+            for(int j = 0; j < num; j++)
+            {
+                if(i % 2 == 0)
+                {
+                    if(j % 2 == 0)
+                    {
+                        System.out.print("-");
+                    }
+                    else
+                    {
+                        System.out.print("*");
+                    }
+                }
+                else
+                {
+                    if(j % 2 == 0)
+                    {
+                        System.out.print("*");
+                    }
+                    else
+                    {
+                        System.out.print("-");
+                    }
+                }
+            }
+            System.out.print("\n");
+        }
+        System.out.print("\n");
+
+    }
+}
