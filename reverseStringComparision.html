@@ -3,10 +3,17 @@ class HelloWorld {
     public static void main(String[] args) {
         
         String x="abcd";
+        String y="dcba";
         String bag="";
-        for(int i=x.length();i>=0;i--){
-            bag=bag+x.charAt(i);
+        for(int i=x.length()-1;i>=0;i--){
+           // bag+=x(i);
+           bag=bag+x.charAt(i);
         }
-        System.out.println(bag);
+        // System.out.println(bag);
+        if(y.equals(bag)){
+            System.out.println("string1 is reverse of string 2");
+        }else{
+            System.out.println("both strings are not a revese");
+        }
     }
 }
