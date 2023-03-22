@@ -2,12 +2,17 @@ class HelloWorld {
     public static void main(String[] args) {
         int[] arr={1,2,-3,4,-5,0};
         int n=arr.length;
-        String bag="";
+        int joint = arr.length;
+        // String bag="";
+        
+        int[] arr3 = new int[joint];
+        int index = 0;
         for(int i=0;i<n;i++)
         {
             if(arr[i]>=0)
               {
-                bag+=arr[i];
+                // bag+=arr[i];
+                arr3[index++] =  arr[i];
               } 
             
         }
@@ -15,10 +20,15 @@ class HelloWorld {
         {
             if(arr[i]<0)
               {
-                bag+=arr[i];
+                // bag+=arr[i];
+                arr3[index++] =  arr[i];
               } 
             
         }
-        System.out.println(bag);
+        for (int i =0; i< arr3.length; i++)
+        {
+            System.out.print(arr3[i] + ",");
+        }
+        System.out.println("\n");
         }
 }
